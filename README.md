@@ -1,5 +1,5 @@
 # Harmonic-oscillator
-Simulation of harmonic oscillator trajectory and energy using Euler, Verlet and leap frog algorithms
+Simulation of harmonic oscillator trajectory and energy using Euler, Verlet and leap frog algorithms.
 
 'init_cond_and_algorithms' script contains a definition of default initial conditions and algorithms and is being imported to the remaining programs. <br />
 'phase space' plots the dependence of position (x) and momentum (p) on time (t), as well as the phase space (p(x)) of harmonic oscillator using one from defined algorithms (Verlet, Euler, leap frog). <br />
