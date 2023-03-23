@@ -36,12 +36,6 @@ for i in opts:
         else:
             print("Method incorrect. Select \"verlet\", \"leapfrog\" or \"euler\"")
             quit()
-    elif i == "-plot":
-        x_plot = val
-        y_plot = sys.argv[sys.argv.index(i)+2]
-        if x_plot not in params or y_plot not in params:
-            print("Incorrect name of the parameter to plot.")
-            quit()
     else:
         print("Marker incorrect. Try \"-m\" for mass, \"-k\" for oscillator constant, \"-x0\" for initial position, \"-p0\" for initial momentum, \"-n_steps\" for number of simulation steps, \"-delta_t\" for time step or \"-method\" for algorithm.")
         quit()
