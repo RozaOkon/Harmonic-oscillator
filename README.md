@@ -13,3 +13,5 @@ Both 'phase space' and 'stability' can be run with optional markers: <br />
 -n_steps: number of simulation steps (default: 1000) <br />
 -delta_t: simulation time step (default: 0.05) <br />
 -method: algorithm employed to run the simulation (default: Euler algorithm; possible options: euler, verlet, leapfrog (only for phase-space))
+
+Example of execution: stability.py -m 3 -k 2 -method verlet
