@@ -1,11 +1,10 @@
 import matplotlib.pyplot as plt
-import init_cond_and_algorithms as algs
+import M_01_algorithms as algs
 import time
 
 
 # Running the given algorithm
 xn, pn = 1, 0
-x_plot, y_plot = 0, 0
 x_list = []
 p_list = []
 t_list = []
@@ -57,19 +56,9 @@ def plotter(y, z):
     plt.show()
     plt.clf()
 
-if x_plot == "x":
-    x_plot = x
-elif x_plot == "p":
-    x_plot = p
-else:
-    x_plot = t
-
-if y_plot == "t":
-    y_plot = t
-elif y_plot == "p":
-    y_plot = p
-else:
-    y_plot = x
-
-
-plotter(x_plot, y_plot)
+plotter(t, x)
+plt.savefig("x_on_t")
+plotter(t, p)
+plt.savefig("y_on_t")
+plotter(x, p)
+plt.savefig("phase_space")
